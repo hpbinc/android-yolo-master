@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mainConstraintLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    >
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:id="@+id/v_guideline1"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.1015625"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="39dp"/>
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:id="@+id/v_guideline2"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="349dp"
+        app:layout_constraintGuide_percent="0.9088542"/>
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:id="@+id/v_guideline3"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.98"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="377dp" />
+
+    <android.support.constraint.Guideline
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:id="@+id/h_guideline1"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.14"
+        tools:layout_editor_absoluteY="72dp"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <android.support.constraint.Guideline
+        android:layout_width="1dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/h_guideline2"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteY="157dp"
+        tools:layout_editor_absoluteX="0dp"
+        app:layout_constraintGuide_percent="0.3068783"/>
+
+
+    <android.support.constraint.Guideline
+        android:layout_width="1dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/h_guideline3"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteY="206dp"
+        tools:layout_editor_absoluteX="0dp"
+        app:layout_constraintGuide_percent="0.4021164"/>
+
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/eva_ic2"
+        android:id="@+id/fbLogoImageView"
+        app:layout_constraintRight_toLeftOf="@+id/v_guideline2"
+        app:layout_constraintLeft_toLeftOf="@+id/v_guideline1"
+        app:layout_constraintTop_toTopOf="@+id/h_guideline3"/>
+
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/eva_ic2"
+        android:id="@+id/fbLogoStaticImageView"
+        app:layout_constraintRight_toLeftOf="@+id/v_guideline2"
+        app:layout_constraintLeft_toLeftOf="@+id/v_guideline1"
+        app:layout_constraintTop_toTopOf="@+id/h_guideline1" />
+
+
+
+    <TextView
+        android:id="@+id/mimos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Project Eva"
+        android:textColor="#3598db"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        app:layout_constraintLeft_toLeftOf="@+id/v_guideline1"
+        app:layout_constraintRight_toLeftOf="@+id/v_guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/fbLogoImageView" />
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="A Virtual Assistant"
+        android:textColor="#3598db"
+        android:gravity="center"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="@+id/v_guideline1"
+        app:layout_constraintRight_toLeftOf="@+id/v_guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/mimos" />
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="6dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:gravity="center"
+        android:text="© 2017-2018 EVA Inc."
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="@+id/v_guideline1"
+        app:layout_constraintRight_toLeftOf="@+id/v_guideline2"
+        app:layout_constraintHorizontal_bias="0.504"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp" />
+
+</android.support.constraint.ConstraintLayout>
